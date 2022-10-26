@@ -1,0 +1,125 @@
+#footer{
+    margin-top: 5rem;
+    padding: 80px 6.5% 0px 6.5% ;
+    background-color:#6c757d;
+}
+#footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-inner{
+    color: whitesmoke;
+}
+.foo-contain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-logo{
+    width:4rem;
+    height:4rem;
+    object-fit: contain;
+    align-self: stretch;
+   
+}
+.foo-contain>span{
+    position: relative;
+}
+.footer__ul{
+     width: 100%;
+    list-style: none;
+    
+}
+.footer__ul-s{
+    font-size: 1.5rem;
+    letter-spacing: 1.1px;
+}
+ 
+@media only screen and (max-width: 450px){
+    .foo-contain{
+        display: block;
+    }
+    .foo-contain .footer__ul {
+        max-width: 100%;
+        padding: 23px 0 23px 0;
+        border-bottom: 1px solid #212529;
+    }
+    #footer{
+        padding: 50px 6.5% 0px 6.5% ;
+    }
+    
+}
+@media only screen and (max-width: 320px){
+
+     .footer__ul>li{
+        margin: .8rem 0 .8rem 0;
+     }
+     .foo-contain .footer__ul>li a{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+}
+
+.footer__ul>li a{
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family:'Noto Sans JP', sans-serif;
+}
+.footer-bottom {
+    width: 100%;
+
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.copy {
+    font-size: 15px;
+    text-align: center;
+    text-align: left;
+}
+.foo-contain-a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer-logo-a{
+    width:4rem;
+    height:4rem;
+    object-fit: contain;
+    align-self: stretch;
+   
+}
+.footer__ul>li a{
+    width: 100%;
+    transition: .3s ease-in-out;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.foo-contain>span{
+    position: relative;
+}
+.footer__ul{
+     width: 100%;
+    list-style: none;
+    
+}
+.footer__ul-s{
+    font-size: 1.5rem;
+    letter-spacing: 1.1px;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}

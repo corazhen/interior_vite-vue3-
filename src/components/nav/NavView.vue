@@ -1,47 +1,16 @@
 <script setup>
-import { reactive } from "vue";
-
-const navList = reactive([
-  {
-    name: "",
-    path: "/",
-  },
-  {
-    name: "ABOUT",
-    path: "/about",
-  },
-  {
-    name: "PROJECT",
-    path: "/project",
-  },
-  {
-    name: "NEWS",
-    path: "/news",
-  },
-  {
-    name: "CONTACT",
-    path: "/contact",
-  },
-]);
+import { ref } from "vue";
+import { useCounterStore } from "@/store/index.js";
+const store = useCounterStore();
+const navList = ref(store.navList);
 </script>
 <template>
-  <header id="header">
-    <a href="../html/OP.html" class="header-logo">
-      <img
-        class="logo"
-        target="style"
-        src="@/assets/front/img/logo2.svg"
-        alt=""
-      />
-      <span> CORA Interior Design </span>
-    </a>
-    <div class="navbar">
-      <ul class="navbar-ul" v-for="value of navList" :key="value">
-        <li>
-          <RouterLink :to="value.path">{{ value.name }}</RouterLink>
-        </li>
-      </ul>
-    </div>
-  </header>
+  <div class="navbar">
+    <ul class="navbar-ul" v-for="value of navList" :key="value.path">
+      <li>
+        <RouterLink :to="value.path">{{ value.name }}</RouterLink>
+      </li>
+    </ul>
+  </div>
 </template>
 <style></style>
