@@ -1,9 +1,53 @@
-$font_one:14px;
-$font_two:16px;
-$font_three:18px;
+$font_one: 14px;
+$font_two: 16px;
+$font_three: 18px;
 
-$fontWeight_one:400;
-$fontWeight_two:500;
-$fontWeight_three:700;
+$fontWeight_one: 400;
+$fontWeight_two: 500;
+$fontWeight_three: 700;
 
-$color_black:#2125;
+$color_black: #2125;
+// RWD 尺寸規範
+@mixin largeWeb {
+    @media (max-width: 1536px) {
+        @content;
+    }
+}
+@mixin maxWeb {
+    @media (max-width: 1048px) {
+        @content;
+    }
+}
+@mixin web {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin biggerMobile {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+@mixin smallerMobile {
+    @media (max-width: 300px) {
+        @content;
+    }
+}
+// RWD 圖片縮排　應該要用變數
+
+@mixin selfLogoRwd {
+    @media (max-width: 1250px) {
+        @content;
+    }
+}
