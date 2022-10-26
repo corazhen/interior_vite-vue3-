@@ -2,7 +2,7 @@
 import NavView from "@/components/nav/NavView.vue";
 </script>
 <template>
-  <header class="flex p-5 justify-between">
+  <header class="flex p-5 justify-between items-center text-lg tracking-wider">
     <RouterLink to="/" class="header-logo">
       <img
         class="logo"
