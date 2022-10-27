@@ -1,0 +1,280 @@
+/* our-team */
+#our-team {
+    padding: 160px 6.5% 0px 6.5%;
+    opacity: 1;
+    position: relative;
+    transition: all 0.3s ease;
+    background: #fbfdff;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    #our-team-inner {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+.ourt_txt {
+    margin-bottom: 3rem;
+    span {
+        font-size: 2.5rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+            sans-serif;
+    }
+}
+.ourt-contain {
+    display: flex;
+    margin-top: 5rem;
+    .ourt-left {
+        position: relative;
+        width: 30%;
+    }
+    .ourt-right {
+        width: 60%;
+        .ourt-title {
+            padding-bottom: 40px;
+            padding: 10px 0 60px 100px;
+            transform: translateX(-60px);
+        }
+    }
+}
+.ourt-leader_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("@/assets/front/img/leader02.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ourt-title {
+    small {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        font-weight: 400;
+        position: relative;
+    }
+    .mle {
+        font-size: 2.8rem;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+            sans-serif;
+        text-shadow: 2px 4px #bcb8b1;
+        color: #6c757d;
+    }
+}
+.ourt-box {
+    padding: 10px 0 60px 100px;
+    p {
+        padding-right: 3rem;
+        font-size: 18px;
+        line-height: 2rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.ourt-title-s {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 20px;
+    font-family: copperplate, serif;
+    font-size: 3rem;
+}
+.ourt-contain-la {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .ourt-left-la {
+        position: relative;
+        width: 70%;
+        .ourt-title-la {
+            padding: 10px 0 60px 70px;
+            padding-bottom: 40px;
+            transform: translateX(-45px);
+            small {
+                font-size: 1rem;
+                position: absolute;
+                top: 4rem;
+                right: 0;
+            }
+            .lle {
+                font-size: 2.8rem;
+                position: absolute;
+                top: 3rem;
+                left: 4rem;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                    Verdana, sans-serif;
+                text-shadow: 2px 4px #bcb8b1;
+                color: #6c757d;
+            }
+            .ourt-title-h2-la {
+                position: relative;
+
+                font-size: 2rem;
+                padding-bottom: 1rem;
+                font-weight: 400;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.ourt-box-la {
+    margin-top: 3rem;
+    padding: 10px 0 60px 70px;
+    width: 30%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    p {
+        padding-right: 4.5rem;
+        padding-bottom: 25px;
+        font-size: 18px;
+        line-height: 2rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.ourt-left > img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+@include pad {
+    .ourt-leader-la_img {
+        height: 60%;
+    }
+    .ourt-leader_img {
+        height: 60%;
+    }
+    .mle {
+        font-size: 1.8rem;
+        top: 2.8rem;
+        right: 0;
+    }
+    .lle {
+        font-size: 1.8rem;
+        top: 2.8rem;
+        left: 2.8rem;
+    }
+
+    .la_img {
+        display: none;
+    }
+
+    #about {
+        padding: 60px 0 0px 0;
+    }
+    .ourt-right {
+        width: 70%;
+        padding: 10px 0 60px 10px;
+    }
+    .ourt-box {
+        padding: 10px 0 60px 30px;
+        padding-right: 1rem;
+        p {
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 2rem;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    .ourt-leader_img {
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        /* height: 100%; */
+        background-image: url(@/assets/front/img/leader02.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .ourt-box-la {
+        padding: 0 0 60px 10px;
+        p {
+            padding-right: 10px;
+            font-size: 1rem;
+        }
+    }
+}
+
+@include mobile {
+    .ourt-contain {
+        display: block;
+        .ourt-left {
+            padding: 1rem;
+            width: 100%;
+        }
+        .ourt-right {
+            width: 100%;
+            padding: 10px 0 60px 10px;
+            padding-bottom: 30rem;
+            .ourt-title {
+                padding-bottom: 40px;
+                padding: 10px 0 60px 60px;
+                transform: translateX(-60px);
+                .mle {
+                    top: 4rem;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .ourt-left-la {
+        width: 100%;
+        .lle {
+            font-size: 1.8rem;
+            top: 4rem;
+            left: 4rem;
+        }
+    }
+    .ourt-contain-la {
+        display: block;
+    }
+
+    .ourt-right-la {
+        display: none;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -30rem;
+            left: 0;
+            background-image: url(@/assets/front/img/la02.jpg);
+            background-repeat: no-repeat;
+        }
+    }
+    .ourt-box-la {
+        width: 100%;
+        p {
+            padding-right: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .ourt-box {
+        padding: 0 0 25px;
+        padding-right: 1rem;
+        p {
+            padding-right: 0;
+            font-size: 1rem;
+        }
+    }
+}

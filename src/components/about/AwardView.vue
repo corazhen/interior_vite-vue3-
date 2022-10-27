@@ -3,7 +3,7 @@
 <template>
   <section id="award">
     <div id="award-inner">
-      <div class="award-header">
+      <div>
         <div class="award_txt">
           <span>Award</span><br />
           <span>2021</span>
@@ -12,13 +12,13 @@
       <div class="award-contain">
         <div class="award-f">
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w03.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w03.jpg" alt="" />
           </a>
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w07.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w07.jpg" alt="" />
           </a>
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w04.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w04.jpg" alt="" />
           </a>
         </div>
         <div class="award-f-t">
@@ -31,13 +31,13 @@
         </div>
         <div class="award-f">
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w02.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w02.jpg" alt="" />
           </a>
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w06.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w06.jpg" alt="" />
           </a>
           <a class="award-f-c">
-            <img class="award-f-im" src="../img/w05.jpg" alt="" />
+            <img class="award-f-im" src="@/assets/front/img/w05.jpg" alt="" />
           </a>
         </div>
         <div class="award-f-t">

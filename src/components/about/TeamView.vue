@@ -13,7 +13,7 @@
       <div class="ourt-contain">
         <div class="ourt-left">
           <!-- <div>.ourt-leader_img</div> -->
-          <img src="../img/leader01.jpg" alt="" />
+          <img src="@/assets/front/img/leader01.jpg" alt="" />
         </div>
         <div class="ourt-right">
           <div class="ourt-title">
@@ -52,14 +52,14 @@
         </div>
         <div class="ourt-right-la">
           <!-- <div class="ourt-leader-la_img"> -->
-          <img src="../img/la02.jpg" alt="" />
+          <img src="@/assets/front/img/la02.jpg" alt="" />
         </div>
       </div>
       <!-- 男生介紹 -->
       <div class="ourt-contain">
         <div class="ourt-left">
           <!-- <div>.ourt-leader_img</div> -->
-          <img src="../img/leader01.jpg" alt="" />
+          <img src="@/assets/front/img/leader01.jpg" alt="" />
         </div>
 
         <div class="ourt-right">
@@ -98,12 +98,11 @@
           </div>
         </div>
         <div class="ourt-right-la">
-          <img src="../img/la02.jpg" alt="" />
+          <img src="@/assets/front/img/la02.jpg" alt="" />
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style>
-</style>
+<style></style>

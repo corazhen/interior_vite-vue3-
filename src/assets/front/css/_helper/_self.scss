@@ -19,7 +19,7 @@ $color_black: #2125;
     }
 }
 @mixin web {
-    @media (max-width: 992px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }
@@ -40,7 +40,7 @@ $color_black: #2125;
     }
 }
 @mixin smallerMobile {
-    @media (max-width: 300px) {
+    @media (max-width: 320px) {
         @content;
     }
 }
