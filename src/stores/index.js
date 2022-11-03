@@ -1,15 +1,21 @@
-import { ref } from "vue";
+import { reactive } from "vue";
 import { defineStore } from "pinia";
-export const useCounterStore = defineStore("payForm", () => {
-  const navList = ref([
-    {
-      name: "",
-      path: "/",
-    },
-    {
-      name: "ABOUT",
-      path: "/about",
-    },
+export const useCounterStore = defineStore("index", () => {
+  const navList = reactive(
+    [
+      {
+        name: "",
+        path: "/",
+      },
+      {
+        name: "about",
+        path: "/about",
+      },
+      {
+        name: "contact",
+        path: "/contact",
+      },
+    ]
     // {
     //   name: "PROJECT",
     //   path: "/project",
@@ -21,8 +27,8 @@ export const useCounterStore = defineStore("payForm", () => {
     // {
     //   name: "CONTACT",
     //   path: "/contact",
-    // },
-  ]);
+    // }
+  );
   // const fetchapiData = async () => {
   //   try {
   //     const res = await axios.get("api 路徑");

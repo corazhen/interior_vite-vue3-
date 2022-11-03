@@ -1,27 +1,8 @@
 <script setup>
-import { reactive } from "vue";
-const navList = reactive([
-  {
-    name: "",
-    path: "/",
-  },
-  {
-    name: "ABOUT",
-    path: "/about",
-  },
-  {
-    name: "PROJECT",
-    path: "/project",
-  },
-  {
-    name: "NEWS",
-    path: "/news",
-  },
-  {
-    name: "CONTACT",
-    path: "/contact",
-  },
-]);
+import { ref } from "vue";
+import { useCounterStore } from "@/stores/index.js";
+const store = useCounterStore();
+const navList = ref(store.navList);
 </script>
 <template>
   <div class="header-hambur">
@@ -36,7 +17,7 @@ const navList = reactive([
         <div class="toggle-content-l" v-for="value of navList" :key="value">
           <RouterLink :to="value.path">{{ value.name }} </RouterLink>
         </div>
-        <div class="toggle-content-R">
+        <!-- <div class="toggle-content-R">
           <a href="../html/prague.html" target="_blank" class="loc_link">
             <span class="loc__icon">
               <i class="fab fa-facebook-square"></i>
@@ -52,7 +33,7 @@ const navList = reactive([
               <i class="fas fa-map-marker-alt"></i>
             </span>
           </a>
-        </div>
+        </div> -->
         <div class="toggle-content-addr">
           <input
             type="text"

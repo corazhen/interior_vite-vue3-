@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { useCounterStore } from "@/store/index.js";
+import { useCounterStore } from "@/stores/index.js";
 const store = useCounterStore();
 const navList = ref(store.navList);
 </script>
@@ -8,7 +8,7 @@ const navList = ref(store.navList);
   <div class="navbar">
     <ul class="navbar-ul" v-for="value of navList" :key="value.path">
       <li>
-        <RouterLink :to="value.path">{{ value.name }}</RouterLink>
+        <router-link :to="value.path">{{ value.name }}</router-link>
       </li>
     </ul>
   </div>

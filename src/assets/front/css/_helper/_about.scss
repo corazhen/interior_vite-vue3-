@@ -3,7 +3,6 @@
     background: #fbfdff;
     #about-inner {
         display: flex;
-        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         flex-direction: row;
@@ -206,7 +205,6 @@
 }
 @include mobile {
     .about-left {
-        width: 100%;
         &::after {
             content: "";
             left: 0;

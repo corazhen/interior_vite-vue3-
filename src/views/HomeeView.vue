@@ -7,11 +7,11 @@ import NewsView from "@/components/home/JournalView.vue";
 </script>
 
 <template>
-  <main>
-    <CarouselView />
-    <ConceptView />
-    <ContactView />
-    <JournalView />
-    <NewsView />
-  </main>
+  <!-- <main> -->
+  <CarouselView />
+  <ConceptView />
+  <ContactView />
+  <JournalView />
+  <NewsView />
+  <!-- </main> -->
 </template>
